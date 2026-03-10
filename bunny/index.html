@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initials-scale=1">
+
+<style>
+:root {
+	--watermelon-pink: hsl(351deg 67% 67%);
+	--watermelon-contrast: hsl(171deg 67% 67%);
+	--background-color: var(--watermelon-pink); /*palevioletred;*/
+	--color: white;
+	--title-color: hsl(343deg, 66%, 29%);
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-color);
+	color: var(--color);
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	color: var(--title-color);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	background-image: url("/asset/cat.jpg");
+}
+
+main {
+	min-width: 50vw;
+	min-height: 100vh;
+	padding: 0 10px 0 10px;
+	text-align: left;
+	border: 2px white solid;
+	border-width: 0 2px;
+	margin: 50px;
+}
+
+img.border {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+</style>
+
+<body>
+
+<img class="border" src="/bunny/border.gif">
+
+<main>
+<h1>Bunny's Bemusements</h1>
+<h2>Heading 2</h2>
+
+Can you help me
+</main>
+</body>

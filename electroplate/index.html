@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1">
+
+<style>
+
+img {
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+textarea {
+	background-image: url("/asset/electroplate2.jpg");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	width: 100dvw;
+	height: 100dvh;
+}
+
+</style>
+
+<textarea>
+
+<script type="module" src="/electroplate.js"></script>
+
+<template id="my-button">
+	<style>
+		* { color: red }
+	</style>
+
+	<button>
+		<script type="module">
+			this.addEventListener("click", () => { console.log("wowie"); });
+		</script>
+
+		<slot>Big Guy!</slot>
+	</button>
+</template>
+
+<my-button></my-button>
+
+</textarea>
