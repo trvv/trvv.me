@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/asset/reset.css">
+
+<style>
+body {
+	display: grid;
+	min-height: 100vh;
+	padding: 1rem;
+}
+
+@media (orientation: portrait) {
+	main {
+		width: 100%;
+	}
+}
+
+@media (orientation: landscape) {
+	body {
+		place-items: center;
+	}
+
+	main {
+		width: 33%;
+	}
+}
+
+table {
+	overflow-x: scroll;
+	width: 100%;
+	border: 1px solid;
+
+	th {
+		border-bottom: 1px solid;
+	}
+
+	th, td {
+		padding: 0 0.5rem 0 0.5rem;
+		border-right: 1px solid;
+	}
+}
+
+div.side-by-side {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 1rem;
+}
+
+summary {
+	list-style: none;
+}
+
+details[open] summary {
+	opacity: 0.5;
+}
+
+details + details {
+	text-indent: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-decoration: none;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+</style>
+
+<main>
+	<hgroup>
+		<h1><a href="#">Lix</a></h1>
+		<p>/liʃ/ (L-IH-SH) is an English spelling reform</p>
+	</hgroup>
+	<br>
+	<h2 id="description"><a href="#description">Description</a></h2>
+	<br>
+	<table>
+		<caption>fig. 1 — Alphabet</caption>
+		<thead>
+			<tr>
+				<th scope="col">Letter</th>
+				<th scope="col">Sound (IPA)</th>
+				<th scope="col">Example</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>a</td>
+			<td>/æ/</td>
+			<td><i>a</i>nt</td>
+		</tr>
+		<tr>
+			<td>b</td>
+			<td>/b/</td>
+			<td><i>b</i>at</td>
+		</tr>
+		<tr>
+			<td>c</td>
+			<td>/θ/</td>
+			<td><i>th</i>in → <i>c</i>in</td>
+		</tr>
+		<tr>
+			<td>d</td>
+			<td>/d/</td>
+			<td><i>d</i>og</td>
+		</tr>
+		<tr>
+			<td>e</td>
+			<td>/e/</td>
+			<td><i>e</i>dit</td>
+		</tr>
+		<tr>
+			<td>f</td>
+			<td>/f/</td>
+			<td><i>f</i>it</td>
+		</tr>
+		<tr>
+			<td>g</td>
+			<td>/g/</td>
+			<td><i>g</i>ot</td>
+		</tr>
+		<tr>
+			<td>h</td>
+			<td>/h/</td>
+			<td><i>h</i>elp</td>
+		</tr>
+		<tr>
+			<td>i</td>
+			<td>/ɪ/</td>
+			<td><i>i</i>n</td>
+		</tr>
+		<tr>
+			<td>j</td>
+			<td>/ʒ/</td>
+			<td><i>j</i>ouissance → jiwisons</td>
+		</tr>
+		<tr>
+			<td>k</td>
+			<td>/k/</td>
+			<td><i>k</i>in</td>
+		</tr>
+		<tr>
+			<td>l</td>
+			<td>/l/</td>
+			<td><i>l</i>ap</td>
+		</tr>
+		<tr>
+			<td>m</td>
+			<td>/m/</td>
+			<td><i>m</i>an</td>
+		</tr>
+		<tr>
+			<td>n</td>
+			<td>/n/</td>
+			<td><i>n</i>ip</td>
+		</tr>
+		<tr>
+			<td>o</td>
+			<td>/o/</td>
+			<td><i>o</i>n</td>
+		</tr>
+		<tr>
+			<td>p</td>
+			<td>/p/</td>
+			<td><i>p</i>at</td>
+		</tr>
+		<tr>
+			<td>q</td>
+			<td>/ð/</td>
+			<td><i>th</i>at → <i>q</i>at</td>
+		</tr>
+		<tr>
+			<td>r</td>
+			<td>/r/</td>
+			<td><i>r</i>od</td>
+		</tr>
+		<tr>
+			<td>s</td>
+			<td>/s/</td>
+			<td><i>s</i>am</td>
+		</tr>
+		<tr>
+			<td>t</td>
+			<td>/t/</td>
+			<td><i>t</i>ip</td>
+		</tr>
+		<tr>
+			<td>u</td>
+			<td>/ə/</td>
+			<td><i>u</i>p</td>
+		</tr>
+		<tr>
+			<td>v</td>
+			<td>/v/</td>
+			<td><i>v</i>amp</td>
+		</tr>
+		<tr>
+			<td>w</td>
+			<td>/w/</td>
+			<td><i>w</i>it</td>
+		</tr>
+		<tr>
+			<td>x</td>
+			<td>/ʃ/</td>
+			<td><i>sh</i>ed → <i>x</i>ed</td>
+		</tr>
+		<tr>
+			<td>y</td>
+			<td>/j/</td>
+			<td><i>y</i>et</td>
+		</tr>
+		<tr>
+			<td>z</td>
+			<td>/z/</td>
+			<td><i>z</i>ap</td>
+		</tr>
+	</table>
+	<br>
+	<details>
+		<summary>
+			Lix is an English language spelling reform prioritizing phonemic coherence for the General American dialect. It fully preserves the existing English alphabet.
+		</summary>
+		<p>
+			Lix iz an Inglix langwidj speling riyfuwrm prayuwritayzing fuwniymuk kuwhiyruns fuwr qiy Djenrul Umeyrikun dayulekt. It fiwliy priyzurvz qiy igzisting Inglix alfubet.
+		</p>
+	</details>
+	<details>
+		<summary>
+			Despite having 26 characters, English has ~45 phonemes. This makes it a surprisingly poor alphabet in the strict sense, but permitting
+			some basic clustering we can get away with everything we need to.
+		</summary>
+		<p>
+			Dispayt having 26 keyrikturz, Inglix haz ~45 fuwniymz. Qis meyks it ey surprayzingliy puwr alfubet in qiy stxrikt sense, but purmiting
+			sum beysik klusturing wiy kan git uwey wic evriycing wiy niyd tew.
+		</p>
+	</details>
+	<br>
+	<table>
+		<caption>fig. 2 — Diphthongs</caption>
+		<thead>
+			<tr>
+				<th scope="col">Letters</th>
+				<th scope="col">Sound (IPA)</th>
+				<th scope="col">Example</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>aw</td>
+			<td>/aʊ/</td>
+			<td><i>ou</i>t → <i>aw</i>t</td>
+		</tr>
+		<tr>
+			<td>ay</td>
+			<td>/aɪ/</td>
+			<td><i>I</i> → <i>ay</i></td>
+		</tr>
+		<tr>
+			<td>ew</td>
+			<td>/u/</td>
+			<td>y<i>ou</i> → y<i>ew</i></td>
+		</tr>
+		<tr>
+			<td>ey</td>
+			<td>/eɪ/</td>
+			<td><i>ai</i>m → <i>ey</i>m</td>
+		</tr>
+		<tr>
+			<td>eyr</td>
+			<td>/ɛr/</td>
+			<td><i>air</i> → <i>eyr</i></td>
+		</tr>
+		<tr>
+			<td>iw</td>
+			<td>/ʊ/</td>
+			<td>b<i>oo</i>k → b<i>iw</i>k</td>
+		</tr>
+		<tr>
+			<td>iwr</td>
+			<td>/ʊr/</td>
+			<td>p<i>oor</i> → p<i>oor</i></td>
+		</tr>
+		<tr>
+			<td>iy</td>
+			<td>/i/</td>
+			<td>h<i>e</i> → h<i>iy</i></td>
+		</tr>
+		<tr>
+			<td>iyr</td>
+			<td>/ɪr/</td>
+			<td><i>ear</i> → <i>iyr</i></td>
+		</tr>
+		<tr>
+			<td>or</td>
+			<td>/ɑr/</td>
+			<td><i>are</i> → <i>or</i></td>
+		</tr>
+		<tr>
+			<td>ow</td>
+			<td>/ɔ/</td>
+			<td>l<i>aw</i> → l<i>ow</i></td>
+		</tr>
+		<tr>
+			<td>ur</td>
+			<td>/ər/</td>
+			<td>h<i>er</i> → h<i>ur</i></td>
+		</tr>
+		<tr>
+			<td>uw</td>
+			<td>/oʊ/</td>
+			<td><i>oh</i> → <i>uw</i></td>
+		</tr>
+		<tr>
+			<td>uwr</td>
+			<td>/ɔr/</td>
+			<td><i>or</i> → <i>uwr</i></td>
+		</tr>
+		<tr>
+			<td>uwy</td>
+			<td>/ɔɪ/</td>
+			<td>b<i>oy</i> → b<i>uwy</i></td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<caption>fig. 3 — Consonant Clusters</caption>
+		<thead>
+			<tr>
+				<th scope="col">Letters</th>
+				<th scope="col">Sound (IPA)</th>
+				<th scope="col">Example</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>dj</td>
+			<td>/dʒ/</td>
+			<td><i>j</i>ack → <i>dj</i>ak</td>
+		</tr>
+		<tr>
+			<td>djr</td>
+			<td>/dʒr/</td>
+			<td><i>dr</i>ead → <i>djr</i>ed</td>
+		</tr>
+		<tr>
+			<td>ng</td>
+			<td>/ŋ(g)/</td>
+			<td>ba<i>ng</i></td>
+		</tr>
+		<tr>
+			<td>nk</td>
+			<td>/ŋk/</td>
+			<td>ba<i>nk</i></td>
+		</tr>
+		<tr>
+			<td>tx</td>
+			<td>/tʃ/</td>
+			<td><i>ch</i>at → <i>tx</i>at</td>
+		</tr>
+		<tr>
+			<td>txr</td>
+			<td>/dʃr/</td>
+			<td><i>tr</i>ade → <i>txr</i>eyd</td>
+		</tr>
+	</table>
+	<br>
+	<h2 id="examples"><a href="#examples">Examples</a></h2>
+	<br>
+	<h3 id="classic-pangrams"><a href="#classic-pangrams">Classic Pangrams</a></h3>
+	<p>
+		Qiy kwik brawn foks djumps uwvur qu leyziy dowg.<br>
+		Sfinks uv blak kwuwrtz, hiyr may vaw
+	</p>
+	<br>
+	<h3 id="the-lord-s-prayer"><a href="#the-lord-s-prayer">The Lord's Prayer</a></h3>
+	<p>
+		Or foqur hew ort in hevun<br>
+		holuwd biy qay neym<br>
+		Qay kingdum kum,<br>
+		qay wil biy dun,<br>
+		on Urc az it iz in hevun<br>
+		Fuwrgiv us awur txrespasuz<br>
+		as wiy fuwrgiv quwz hew txrespas ugenst us<br>
+		Giv us qis dey or deyliy bred<br>
+		and liyd us not intew tempteyxun<br>
+		but dulivur us frum iyvul<br>
+	</p>
+</main>
