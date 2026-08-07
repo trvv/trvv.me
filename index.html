@@ -1,7 +1,9 @@
 <!doctype html>
 
+<title>trvv</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="https://github.com/trvv.png" />
 
 <style>
   *,
@@ -52,15 +54,23 @@
     max-width: 40vw;
   }
 
-  .masonry-container {
-    column-count: 3;
-    column-gap: 0px;
+  @media (orientation: landscape) {
+    .masonry-container {
+      column-count: 3;
+      column-gap: 0px;
+    }
   }
 
   .masonry-container img {
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  @media (orientation: portrait) {
+    .masonry-container {
+      column-count: 1;
+    }
   }
 </style>
 
@@ -69,22 +79,27 @@
     <img
       alt="Advertisement for a 'Morhpine Easy Home Cure' claiming to reverse addiction in a 'painless-permanent' fashion"
       src="/asset/morphine.jpg"
-      title="Morhpine - Project"
+      title="Morhpine (Project)"
     />
   </a>
   <a href="/writing">
     <img
       alt="Looped animation of a woman writing in classical painting style, by Marta Stankevica"
       src="/asset/writing.gif"
-      title="Personal Writing"
+      title="Writing"
     />
   </a>
   <a href="mailto:fromSite@trvv.me">
-    <img alt="USPS Mailbox" src="/asset/mail.jpg" title="Personal Email" />
+    <img alt="USPS Mailbox" src="/asset/mail2.jpg" title="Email" />
+  </a>
+  <a href="https://www.sen.com/live">
+    <video autoplay loop>
+      <source src="/asset/rotation.webm" type="video/webm" />
+    </video>
   </a>
   <a href="/electroplate">
     <img
-      title="Electroplate - Project"
+      title="Electroplate (Project)"
       alt="Intricate electroplated book cover, by Lilian Simpson"
       src="/asset/electroplate.jpg"
     />
@@ -96,9 +111,16 @@
       src="/asset/thinktocat.jpg"
     />
   </a>
+  <a href="/ghostship">
+    <img
+      title="Ghostship (Project)"
+      alt="Generated image of the 'Ghost Ship Fractal', a function that produces a vague image of a ship"
+      src="/asset/Ghost_ship_fractal.png"
+    />
+  </a>
   <a href="/schwa"
     ><img
-      title="Schwa - Project"
+      title="Schwa (Project)"
       alt="'Schwa' on the Thomas 2001 Organ, sourced by Mahalie Stackpole"
       src="/asset/schwa.jpg"
   /></a>
@@ -108,7 +130,7 @@
       alt="Tiny cat looking at strawberry cake"
       src="/asset/cat.jpg"
   /></a>
-  <a href="/lix"><img title="Lix - Project" src="/asset/orrmulum.jpg" /></a>
+  <a href="/lix"><img title="Lix (Project)" src="/asset/orrmulum.jpg" /></a>
   <a href="/photo">
     <img
       alt="Camera with exceedingly organic design, by Luigi Colani"
@@ -118,8 +140,15 @@
   </a>
   <a href="/eczema"
     ><img
-      title="Eczema - Project"
+      title="Eczema (Project)"
       alt="Two light-skinned hands clasped in prayer formation with noticeable rashing"
       src="/asset/eczema.jpg"
   /></a>
+  <a href="/asset/resume.jpg">
+    <img
+      title="Personal Resumé"
+      alt="Line drawing of townsfolk gazing up at sign painter illuminating a billboard with the phrase 'Advertisment'"
+      src="/asset/resume2.jpg"
+    />
+  </a>
 </div>
